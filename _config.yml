@@ -12,20 +12,20 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "혼자서하는 괴발개발 블로그"
+title                    : "Dongmin's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "aisolab"
-description              : "혼자서하는 괴발 개발 블로그"
-url                      : "https://aisolab.github.io"
+name                     : "Dongmin Lee"
+description              : "Reinforce yourself"
+url                      : "https://dongminlee94.github.io"
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/nick.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/nick.jpeg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -34,7 +34,7 @@ comments:
   provider               : "disqus"
 # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "aisolab" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "https-dongminlee94-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -109,47 +109,31 @@ analytics:
 
 # Site Author
 author:
-  name             : "aisolab"
-  avatar           : "/assets/images/nick.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "회사에서는 월급 받고 집에서는 취미로 코딩하는 머신러닝 엔지니어"
-  location         : "South Korea"
-  email            :
+  name             : "Dongmin Lee"
+  avatar           : "/assets/images/nick.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Reinforce yourself"
+  location         : "Seoul, South Korea"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:bsk0130@email.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://aisolab.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/aiso_lab"
+      url: mailto:kid33629@gmail.com
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/boseob.kim.16"
+      url: "https://www.facebook.com/dongmin.lee.940419"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/aisolab"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/seopbo/"
+      url: "https://github.com/dongminlee94"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/aiso_lab"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/boseob.kim.16"
+      url: "https://www.facebook.com/dongmin.lee.940419"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/aisolab"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/seopbo/"
-
+      url: "https://github.com/dongminlee94"
 
 # Reading Files
 include:
