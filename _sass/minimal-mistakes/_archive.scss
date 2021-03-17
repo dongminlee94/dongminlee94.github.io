@@ -19,12 +19,12 @@
 }
 
 .archive__item {
-  position: relative;
+  // position: relative;
 
-  // a {
-  //   position: relative;
-  //   z-index: 10;
-  // }
+  a {
+    position: relative;
+    z-index: 10;
+  }
 
   a[rel="permalink"] {
     position: static;
