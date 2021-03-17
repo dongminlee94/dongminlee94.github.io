@@ -67,7 +67,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -114,6 +114,7 @@ author:
   bio              : "Reinforce yourself"
   location         : "Seoul, South Korea"
   email            : 
+  home             : "https://dongminlee94.github.io" # null (default), "absolute or relative url to link to author home"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
