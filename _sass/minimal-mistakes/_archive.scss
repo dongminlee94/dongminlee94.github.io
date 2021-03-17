@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .archive {
-  margin-top: 1em;
+  // margin-top: 1em;
   margin-bottom: 2em;
 
   @include breakpoint($large) {
@@ -18,18 +18,18 @@
   }
 }
 
-.archive__item {
-  position: relative;
+// .archive__item {
+//   position: relative;
 
-  a {
-    position: relative;
-    z-index: 10;
-  }
+//   a {
+//     position: relative;
+//     z-index: 10;
+//   }
 
-  a[rel="permalink"] {
-    position: static;
-  }
-}
+//   a[rel="permalink"] {
+//     position: static;
+//   }
+// }
 
 .archive__subtitle {
   margin: 1.414em 0 0;
