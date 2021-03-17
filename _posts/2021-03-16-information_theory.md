@@ -68,9 +68,12 @@ For probability distribution $P$ and $Q$ defined on the same probability space, 
 
 $$\begin{align} \notag D_{KL}(P \parallel Q) &:= H(P,Q) - H(P)
 \\ \notag &= \big(- \sum_{x \in \mathcal{X}} p(x) \log q(x)\big) - \big(- \sum_{x \in \mathcal{X}} p(x) \log p(x)\big)
-\\ \notag &= -\sum_{x \in \mathcal{X}} p(x) \big( \log q(x) - \log p(x) \big) = \sum_{x \in \mathcal{X}} p(x) \big( \log p(x) - \log q(x) \big)
-\\ \notag &= -\sum_{x \in \mathcal{X}} p(x) \big( \log \frac{q(x)}{p(x)} \big) = \sum_{x \in \mathcal{X}} p(x) \big( \log \frac{p(x)}{q(x)} \big)
-\\ \notag &= \mathbb{E}_{X \sim P} \big[ -\log(Q(X))- \big( -\log(P(X)) \big) \big] = \mathbb{E}_{X \sim P} \big[ \log(P(X))- \log(Q(X)) \big]
+\\ \notag &= -\sum_{x \in \mathcal{X}} p(x) \big( \log q(x) - \log p(x) \big)
+\\ \notag &= \sum_{x \in \mathcal{X}} p(x) \big( \log p(x) - \log q(x) \big)
+\\ \notag &= -\sum_{x \in \mathcal{X}} p(x) \big( \log \frac{q(x)}{p(x)} \big)
+\\ \notag &= \sum_{x \in \mathcal{X}} p(x) \big( \log \frac{p(x)}{q(x)} \big)
+\\ \notag &= \mathbb{E}_{X \sim P} \big[ -\log(Q(X))- \big( -\log(P(X)) \big) \big]
+\\ \notag &= \mathbb{E}_{X \sim P} \big[ \log(P(X))- \log(Q(X)) \big]
 \end{align}$$
 
 - 분포 $P$에서 샘플링된 데이터를 이용한 분포 $Q$에서의 정보량 - 분포 $P$에서 샘플링된 데이터를 이용한 분포 $P$에서의 정보량
