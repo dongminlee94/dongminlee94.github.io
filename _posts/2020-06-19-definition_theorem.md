@@ -14,11 +14,11 @@ RL의 논문들을 보다보면(굳이 RL 논문이 아니더라도) 다양한 n
 
 그러니까 하고 싶은 말이 무엇이냐면, 어떠한 다른 세부분야의 논문들도 기존에 쓰이는 용어와 정의, 정리에서 약간 변형하거나 아예 색다른 모습을 띈 notation들과 equation들로 나올 수 있다는 것이다. 그래서 처음에 용어와 정의, 정리들을 파악할 때 제대로 파악해놓지 않으면 나중에 가서 헷갈리는 경우가 많다.
 
-<center> <img src='../assets/images/d&t/dt1.jpg' width="500"> </center>
+<center> <img src='../../assets/images/d&t/dt1.jpg' width="500"> </center>
 
 위에 그림에서 Saint-Exupery가 했던 말처럼 "Language is the source of misunderstandings". 따라서 새로운 것들이 하나씩 하나씩 튀어나올 때마다 정말 집중해서 봐야할 필요가 있다.
 
-<center> <img src='../assets/images/d&t/dt2.jpg' width="400"> </center>
+<center> <img src='../../assets/images/d&t/dt2.jpg' width="400"> </center>
 
 여기서 "**정의(Definition)**"란 따로 증명하지 않아도 되는 하나의 약속이다. 예를 들어 "1+1=2, 2+2=4"겠지만, "강아지+고양이=악어, 고양이+사람=강아지"라고 약속을 하고, 이 약속을 지키는 어떠한 공간을 만들어낸다면, 간단하게 우리가 쉽게 생각할 수 있는 대소관계가 들어가는 $+,-,\times,\div$ 대수 공간인 *vector space*를 만들어낼 수 있다. 이후에 distance를 주면 *metric space*, size를 주면 *normed space*, similiarity를 주면 *inner-product space*, 더 들어가서 inner-product space 중에서의 complete space인 *hilbert space*까지. 이렇게 약속을 하고 공간을 주면 우리도 하나의 약속이 있는 공간을 만들 수 있는 것이다. 그렇기 때문에 <U>정의가 나오면 그대로 받아들어야 한다.</U> 왜냐하면 정의이기 때문이다. "왜?"라는 물음보다는 "아 그렇구나! 그렇다는데 뭐..! 받아들이자-!!"라고 생각하면 편해지는 것 같다.
 

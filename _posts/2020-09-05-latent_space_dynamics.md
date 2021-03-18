@@ -45,7 +45,7 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 
 ### Proposed Method
 
-<center> <img src='../assets/images/latent_dynamics/e2c.png' width="700"> </center>
+<center> <img src='../../assets/images/latent_dynamics/e2c.png' width="700"> </center>
 
 ---
 
@@ -70,7 +70,7 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 
 ### Proposed Method
 
-<center> <img src='../assets/images/latent_dynamics/lfp.png' width="700"> </center>
+<center> <img src='../../assets/images/latent_dynamics/lfp.png' width="700"> </center>
 
 ---
 
@@ -102,7 +102,7 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 
 ### Proposed Method
 
-<center> <img src='../assets/images/latent_dynamics/dyne.png' width="700"> </center>
+<center> <img src='../../assets/images/latent_dynamics/dyne.png' width="700"> </center>
 
 ---
 
@@ -126,7 +126,7 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 
 ### Proposed Method
 
-<center> <img src='../assets/images/latent_dynamics/lwae_slwae.png' width="700"> </center>
+<center> <img src='../../assets/images/latent_dynamics/lwae_slwae.png' width="700"> </center>
 
 ---
 
@@ -151,7 +151,7 @@ Motion VAE 학습이 끝나면, 학습된 Motion VAE 모델과 함께 더 정교
 
 ### Proposed Method
 
-<center> <img src='../assets/images/latent_dynamics/motion_vae.png' width="700"> </center>
+<center> <img src='../../assets/images/latent_dynamics/motion_vae.png' width="700"> </center>
 
 ---
 

@@ -64,11 +64,11 @@ Control에 대한 한가지 접근방식은 constraints와 objectives가 혼합�
 
 저자의 목표는 physics-based character가 다양한 지형이 주어질 때 dynamic한 걸음걸이를 통해 이동하는 control policies를 생성하는 것이다.
 
-<center> <img src='../assets/images/terrainRL/fg2.png' width="600"> </center>
+<center> <img src='../../assets/images/terrainRL/fg2.png' width="600"> </center>
 
 위의 그림에서 gaps는 random intervals에 위치되는 random width의 gap으로 구성된다. 각각의 action $a_i$는 성공 또는 실패일지도 모르는 착지 (bound)와 뛰기 (leap)를 생성한다. State $s_i$는 particular pose와 velocities 뿐만 아니라 뒤따르는 지형의 state를 포함하고, reward $r(s,a)$는 action의 결과이며 forward motion에는 reward를 주고 falls와 fall에 대한 movement effort에는 penalty를 준다.
 
-<center> <img src='../assets/images/terrainRL/fg3.png' width="600"> </center>
+<center> <img src='../../assets/images/terrainRL/fg3.png' width="600"> </center>
 
 ### 3.1 Transition tuples
 
@@ -98,7 +98,7 @@ Hand로 design되거나 또는 별도의 optimization process를 하는 동안 d
 
 Continuous한 states와 actions를 이용하여 value function $V(s)$와 control policy (deterministic policy) $a=\pi(s)$를 나타내기 위해 function approximators가 필요하다. 따라서 저자는 value function과 policy에 대해 tuples $T$에 기반한 non-parametric approximation method를 사용한다. 각각의 tuple $T_i$은 아래의 그림 (b)와 같이 transition tuple $s_i$의 시작 상태와 관련된 value function $V_i$과 action $a_i$를 저장한다.
 
-<center> <img src='../assets/images/terrainRL/fg4.png' width="500"> </center>
+<center> <img src='../../assets/images/terrainRL/fg4.png' width="500"> </center>
 
 Function approximation에 대해 저자는 Gaussian kernel (weighted Gaussian kernel)를 이용한 $k$NN interpolation을 이용한다.
 
@@ -124,17 +124,17 @@ Value function approximation에 대해서 저자는 $\delta_i = 1$로 두었다.
 
 ### 4.2 Outlier removal
 
-<center> <img src='../assets/images/terrainRL/fg5.png' width="500"> </center>
+<center> <img src='../../assets/images/terrainRL/fg5.png' width="500"> </center>
 
-<center> <img src='../assets/images/terrainRL/al1.png' width="500"> </center>
+<center> <img src='../../assets/images/terrainRL/al1.png' width="500"> </center>
 
 ### 4.3 Value iteration
 
-<center> <img src='../assets/images/terrainRL/al2.png' width="500"> </center>
+<center> <img src='../../assets/images/terrainRL/al2.png' width="500"> </center>
 
 ### 4.4 Exploration
 
-<center> <img src='../assets/images/terrainRL/ta1.png' width="500"> </center>
+<center> <img src='../../assets/images/terrainRL/ta1.png' width="500"> </center>
 
 ---
 
@@ -142,15 +142,15 @@ Value function approximation에 대해서 저자는 $\delta_i = 1$로 두었다.
 
 ### 5.1 Dog actions
 
-<center> <img src='../assets/images/terrainRL/fg67.png' width="500"> </center>
+<center> <img src='../../assets/images/terrainRL/fg67.png' width="500"> </center>
 
-<center> <img src='../assets/images/terrainRL/ta2.png' width="500"> </center>
+<center> <img src='../../assets/images/terrainRL/ta2.png' width="500"> </center>
 
 ### 5.2 Biped actions
 
-<center> <img src='../assets/images/terrainRL/fg8.png' width="500"> </center>
+<center> <img src='../../assets/images/terrainRL/fg8.png' width="500"> </center>
 
-<center> <img src='../assets/images/terrainRL/ta3.png' width="500"> </center>
+<center> <img src='../../assets/images/terrainRL/ta3.png' width="500"> </center>
 
 ### 5.3 Initial actions
 

@@ -6,7 +6,7 @@ categories:
   - ML
 ---
 
-<center> <img src='../assets/images/k.png' width="500"> </center>
+<center> <img src='../../assets/images/k.png' width="500"> </center>
 
 예전 논문들을 읽다가 kernel method를 이용한 방법들이 자주 나와서 정리하려고 한다. 아주 단순한 개념들부터 마지막에는 **KNN Interpolation with a Gaussian Kernel**까지 정리해보자.
 
