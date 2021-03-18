@@ -5,9 +5,6 @@ toc: true
 toc_sticky: true
 categories:
   - Paper
-tags:
-  - Paper
-  - RL
 ---
 
 <center> <img src='../assets/images/terrainRL/fg1.png' width="800"> </center>

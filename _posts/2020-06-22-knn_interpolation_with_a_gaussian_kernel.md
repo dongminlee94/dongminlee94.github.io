@@ -5,8 +5,6 @@ toc: true
 toc_sticky: true
 categories:
   - ML
-tags:
-  - ML
 ---
 
 <center> <img src='../assets/images/k.png' width="500"> </center>

@@ -4,8 +4,6 @@ toc: true
 toc_sticky: true
 categories:
   - CS
-tags:
-  - CS
 ---
 
 - Main material: [[기술 면접 질문] 기술 면접 예상 질문 대비하기 - 알고리즘(Algorithm)편](https://gmlwjd9405.github.io/2017/10/01/basic-concepts-of-development-algorithm.html)

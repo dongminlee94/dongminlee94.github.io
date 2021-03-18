@@ -5,8 +5,6 @@ toc: true
 toc_sticky: true
 categories:
   - CS
-tags:
-  - CS
 ---
 
 ## Outline
