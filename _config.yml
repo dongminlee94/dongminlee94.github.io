@@ -119,9 +119,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:kid33629@gmail.com
-    - label: "CV"
-      icon: "fas fa-fw fa-link"
-      url: "https://drive.google.com/file/d/1dBtWr9csOkoiIbNvVWdIayUzV1_zHu5C/view?usp=sharing"
+    # - label: "CV"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://drive.google.com/file/d/1dBtWr9csOkoiIbNvVWdIayUzV1_zHu5C/view?usp=sharing"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://www.facebook.com/dongmin.lee.940419"
