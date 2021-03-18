@@ -6,7 +6,7 @@ categories:
   - RL
 ---
 
-<center> <img src='../assets/images/terrainRL/fg1.png' width="800"> </center>
+<center> <img src='../../assets/images/terrainRL/fg1.png' width="800"> </center>
 
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), Glen Berseth, and [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
 - Proceeding: ACM Transactions on Graphics (TOG) (Proc. ACM SIGGRAPH 2015)
