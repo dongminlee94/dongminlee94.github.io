@@ -4,7 +4,7 @@ use_math: true
 toc: true
 toc_sticky: true
 categories:
-  - Paper
+  - RL
 ---
 
 <center> <img src='../assets/images/terrainRL/fg1.png' width="800"> </center>

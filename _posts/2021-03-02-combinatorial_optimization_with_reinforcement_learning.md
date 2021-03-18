@@ -4,7 +4,7 @@ use_math: true
 toc: true
 toc_sticky: true
 categories:
-  - Paper
+  - RL
 ---
 
 ## Outline
