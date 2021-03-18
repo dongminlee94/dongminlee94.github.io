@@ -1,6 +1,5 @@
 ---
 title: "Dynamic Terrain Traversal Skills Using Reinforcement Learning"
-use_math: true
 toc: true
 toc_sticky: true
 categories:

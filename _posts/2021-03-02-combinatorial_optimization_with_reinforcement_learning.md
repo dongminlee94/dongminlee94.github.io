@@ -1,6 +1,5 @@
 ---
 title: "Papers on Combinatorial Optimization with Reinforcement Learning"
-use_math: true
 toc: true
 toc_sticky: true
 categories:

@@ -1,6 +1,5 @@
 ---
 title: "Papers on Latent Space Dynamics"
-use_math: true
 toc: true
 toc_sticky: true
 categories:

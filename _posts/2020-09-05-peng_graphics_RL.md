@@ -1,6 +1,5 @@
 ---
 title: "Graphics Series using RL by Xue Bin (Jason) Peng"
-use_math: true
 toc: true
 toc_sticky: true
 categories:

@@ -1,6 +1,5 @@
 ---
 title: "KNN Interpolation with a Gaussian Kernel"
-use_math: true
 toc: true
 toc_sticky: true
 categories:
