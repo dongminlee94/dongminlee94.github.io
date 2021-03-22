@@ -1,5 +1,5 @@
 ---
-title: "OS Review"
+title: "Operating System"
 toc: true
 toc_sticky: true
 categories:

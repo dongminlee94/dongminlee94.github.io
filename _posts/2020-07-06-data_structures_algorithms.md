@@ -1,5 +1,5 @@
 ---
-title: "Data Structures & Algorithms Review"
+title: "Data Structures & Algorithms"
 toc: true
 toc_sticky: true
 categories:

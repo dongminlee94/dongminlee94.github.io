@@ -1,5 +1,5 @@
 ---
-title: "Linear Algebra Review"
+title: "Linear Algebra"
 toc: true
 toc_sticky: true
 categories:

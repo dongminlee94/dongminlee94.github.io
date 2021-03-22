@@ -1,5 +1,5 @@
 ---
-title: "Information Theory Review"
+title: "Information Theory"
 toc: true
 toc_sticky: true
 categories:
