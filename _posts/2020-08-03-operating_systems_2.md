@@ -1,5 +1,5 @@
 ---
-title: "Operating System 2"
+title: "Operating Systems 2"
 toc: true
 toc_sticky: true
 categories:

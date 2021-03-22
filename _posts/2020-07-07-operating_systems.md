@@ -1,5 +1,5 @@
 ---
-title: "Operating System"
+title: "Operating Systems"
 toc: true
 toc_sticky: true
 categories:
