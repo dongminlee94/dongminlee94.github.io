@@ -14,7 +14,7 @@ categories:
 
 ## Abstract
 
-**Simulation과 real world의 discrepancy**를 줄이고자 한다. Simulation에서는 대부분 좋은 결과들을 얻지만, 실제로 real world로 넘어오는 경우 성능이 많이 떨어진다. 하지만 제어기의 세부적인 사항들이 아닌 friction, contact, mass, geometry 성질들에 대한 중요한 차이점들만 있는 경우, simulation을 통해 얻어진 states의 sequence는 real world에서도 유용하다.
+<span style="color:red">Simulation과 real world의 discrepancy</span>를 줄이고자 한다. Simulation에서는 대부분 좋은 결과들을 얻지만, 실제로 real world로 넘어오는 경우 성능이 많이 떨어진다. 하지만 제어기의 세부적인 사항들이 아닌 friction, contact, mass, geometry 성질들에 대한 중요한 차이점들만 있는 경우, simulation을 통해 얻어진 states의 sequence는 real world에서도 유용하다.
 
 따라서 이 논문에서의 접근은 simulator와 simulation-based control policy가 주어졌을 때, real robot에 control policy를 바로 적용하는 것이 아닌 **deep inverse dynamics model**을 이용하여 simulator에서 얻은 next state에 가장 적합하고 real system에 알맞은 action을 얻는다. 추가적으로, deep inverse dynamics model를 incremental하게 학습시키기 위해 data collection 방법도 제안한다.
 
