@@ -54,9 +54,11 @@ Abstract에서 말한 것과 같이 simulation을 통해 얻어진 states의 seq
 
 <center> <img src='../../assets/images/inverse_dynamics/fig1.png' width="800"> </center>
 
-전체적인 과정을 보자. 처음에 할 일은 history $\tau_{-k:}$를 얻는 일이다. 이 history $\tau_{-k:}$는 simulation이 아닌 real world system에서 얻어진다. 이렇게 얻은 history를 이용하여 주어진 source environment의 source policy를 통해 action $a_{source} = \pi_{source} (\tau_{-k:})$를 얻는다. 다음으로, 얻어진 action을 이용하여 source environment에서 next observation $\hat{o}_{next} = o(T_{source} (\tau_{-k:}))$를 얻는다.
+전체적인 과정을 보자. 처음에 할 일은 history $\tau_{-k:}$를 얻는 일이다. 이 history $\tau_{-k:}$는 simulation이 아닌 real world system에서 얻어진다. 이렇게 얻은 history를 이용하여 주어진 source environment의 source policy를 통해 action $a_{source} = \pi_{source} (\tau_{-k:})$를 얻는다.
 
-마지막으로 history $\tau_{-k:}$와 source environment에서 얻어진 next observation $\hat{o}_{next}$를 이용하여 target environment에서 학습된 inverse dynamics model $\phi$를 통해 action $a_{target} = \phi (\tau_{-k:}, \hat{o}_{next})$를 얻는다.
+다음으로, 얻어진 action을 이용하여 source environment에서 next observation $o(T_{source} (\tau_{-k:}))$를 얻는다.
+
+마지막으로 history $\tau_{-k:}$와 source environment에서 얻어진 next observation를 이용하여 target environment에서 학습된 inverse dynamics model $\phi$를 통해 action $a_{target} = \phi (\tau_{-k:}, \hat{o}_{next})$를 얻는다.
 
 모든 과정을 정리하면 아래와 같다.
 
