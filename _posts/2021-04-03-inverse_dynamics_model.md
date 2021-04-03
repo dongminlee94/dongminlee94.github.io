@@ -54,9 +54,9 @@ Abstract에서 말한 것과 같이 simulation을 통해 얻어진 states의 seq
 
 <center> <img src='../../assets/images/inverse_dynamics/fig1.png' width="800"> </center>
 
-전체적인 과정을 보자. 처음에 할 일은 history $\tau_{-k:}$를 얻는 일이다. 이 history $\tau_{-k:}$는 simulation이 아닌 real world system에서 얻어진다. 이렇게 얻은 history를 이용하여 주어진 source environment의 source policy를 통해 action $a_{source} = \pi_{source} (\tau_{-k:})$를 얻는다. 다음으로, 얻어진 action을 이용하여 source environment에서 next observation $\hat{o}_{next}$를 얻는다. 마지막으로 history $\tau_{-k:}$와 source environment에서 얻어진 next observation $\hat{o}_{next}$를 이용하여 target environment에서 학습된 inverse dynamics model $\phi$를 통해 action $a_{target} = \phi (\tau_{-k:}, \hat{o}_{next})$를 얻는다.
+전체적인 과정을 보자. 처음에 할 일은 history $\tau_{-k:}$를 얻는 일이다. 이 history $\tau_{-k:}$는 simulation이 아닌 real world system에서 얻어진다. 이렇게 얻은 history를 이용하여 주어진 source environment의 source policy를 통해 action $a_{source} = \pi_{source} (\tau_{-k:})$를 얻는다. 다음으로, 얻어진 action을 이용하여 source environment에서 next observation $\hat{o}_{next} = o(T_{source} (\tau_{-k:}))$를 얻는다.
 
-$o(T_{source} (\tau_{-k:}))$
+마지막으로 history $\tau_{-k:}$와 source environment에서 얻어진 next observation $\hat{o}_{next}$를 이용하여 target environment에서 학습된 inverse dynamics model $\phi$를 통해 action $a_{target} = \phi (\tau_{-k:}, \hat{o}_{next})$를 얻는다.
 
 모든 과정을 정리하면 아래와 같다.
 
@@ -64,7 +64,7 @@ $$\pi_{target} (\tau_{-k:}) = \phi \Big( \tau_{-k:}, o \big( T_{source} (\tau_{-
 
 만약 학습된 inverse dynamics model이 충분히 정확하다면, **$\pi_{target} (\tau_{-k:})$를 취한 후의 next observation $o_{target}$은 $\hat{o}_{next}$와 비슷할 것이다.**
 
-이러한 접근이 의미가 있으려면, source environment와 target environment가 같은 degrees of freedom을 가지는 것으로 가정해야하지만, 이 논문의 방법론은 **다른 degrees of freedom에서도 가능**하다. 실제로 $\pi_{source}$와 $\pi_{target}$의 action들은 서로 다를 수도 있다. 심지어 action space의 dimensionality가 서로 다를 수도 있다. 왜냐하면 하고자 하는 것은 결국 **$\pi_{source}$와 $\pi_{target}$의 action들을 같게 하는 것이 아닌 next observation $o_{target}$과 $\hat{o}_{next}$를 같게 만들고 싶기 때문이다.**
+이러한 접근이 의미가 있으려면, source environment와 target environment가 같은 degrees of freedom을 가지는 것으로 가정해야하지만, 이 논문의 방법론은 **다른 degrees of freedom에서도 가능**하다. 실제로 $\pi_{source}$와 $\pi_{target}$의 action들은 서로 다를 수도 있다. 심지어 action space간의 dimensionality가 서로 다를 수도 있다. 왜냐하면 하고자 하는 것은 결국 **$\pi_{source}$와 $\pi_{target}$의 action들을 같게 하는 것이 아닌 next observation $o_{target}$과 $\hat{o}_{next}$를 같게 만들고 싶기 때문이다.**
 
 ### 2.3 Training of the inverse dynamics model
 
