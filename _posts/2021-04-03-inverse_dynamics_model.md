@@ -84,9 +84,9 @@ $$\phi : (o_H, a_H, o_{H+1}, a_{H+1}, ..., a_{k+H-1}, o_{k+H}, o_{k+H+1}) \mapst
 
 ### 2.4 Data collection / Exploration
 
-**Data collection**: Training을 위한 data를 모으기 위해 사전에 준비해놓은 preliminary inverse dynamics model $\phi$을 통해 preliminary policy $\pi_{target}$을 사용한다. preliminary policy $\pi_{target}$를 이용하여 $\tau_{H:H+k}$를 생성한다. 그리고 모은 history로 새로운 policy $\pi_{target}$를 학습하는 데에 사용된다.
+**Data collection**: Training을 위한 data를 모으기 위해 사전에 준비해놓은 **preliminary inverse dynamics model $\phi$**을 통해 preliminary policy $\pi_{target}$을 사용한다. preliminary policy $\pi_{target}$를 이용하여 $\tau_{H:H+k}$를 생성한다. 그리고 모은 history로 새로운 policy $\pi_{target}$를 학습하는 데에 사용된다.
 
-**Exploration**: preliminary policy $\pi_{target}$를 이용하여 모은 history의 action에 exploration을 주기 위해 noise를 추가한다. noise를 주는 이유는 training data를 다양하게 만들어서 inverse dynamics model을 더 빠르고 robust하게 학습하도록 만들기 위함이다. 이 때 noise를 너무 많이 주게되면 target trajectories(preliminary policy $\pi_{target}$를 이용하여 모은 history)에서 너무 먼 data들이 모아지고, noise를 너무 적게 주게되면 불충분한 exploration 때문에 inverse dynamics model이 매우 느리게 향상된다. 추가로, 모든 time step에 noise를 추가하는 것은 좋지 않다. 추가적으로, noise를 추가한 target trajectories 실행이 source environment에서 발생할 수 있는 것으로부터 매우 멀리 벗어나기 시작하면 reset을 하는 것이 더 효율적이라고 한다.
+**Exploration**: preliminary policy $\pi_{target}$를 이용하여 모은 history의 action에 exploration을 주기 위해 **noise**를 추가한다. noise를 주는 이유는 training data를 다양하게 만들어서 inverse dynamics model을 더 빠르고 robust하게 학습하도록 만들기 위함이다. 이 때 noise를 너무 많이 주게되면 target trajectories(preliminary policy $\pi_{target}$를 이용하여 모은 history)에서 너무 먼 data들이 모아지고, noise를 너무 적게 주게되면 불충분한 exploration 때문에 inverse dynamics model이 매우 느리게 향상된다. 추가로, 모든 time step에 noise를 추가하는 것은 좋지 않다. 추가적으로, noise를 추가한 target trajectories 실행이 source environment에서 발생할 수 있는 것으로부터 매우 멀리 벗어나기 시작하면 reset을 하는 것이 더 효율적이라고 한다.
 
 ## 3. Experiments
 
