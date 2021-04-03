@@ -70,25 +70,25 @@ $$\pi_{target} (\tau_{-k:}) = \phi \Big( \tau_{-k:}, o \big( T_{source} (\tau_{-
 
 만약 학습된 inverse dynamics model이 충분히 정확하다면, <span style="color:red">$\pi_{target} (\tau_{-k:})$를 취한 후의 next observation $o_{target}$은 $o_{next}$와 비슷할 것이다.</span>
 
-이러한 접근이 의미가 있으려면, source environment와 target environment가 같은 degrees of freedom을 가지는 것으로 가정해야하지만, 이 논문의 방법론은 <span style="color:red">두 환경 사이의 다른 degrees of freedom에서도 가능하다.</span> 다시말해 $\pi_{source}$와 $\pi_{target}$의 action들은 서로 다를 수도 있을 뿐만 아니라 action space간의 dimensionality가 서로 다를 수도 있다. 왜냐하면 하고자 하는 것은 결국 <span style="color:red">$\pi_{source}$와 $\pi_{target}$의 action들을 같게 하는 것이 아닌 next observation $o_{target}$과 $o_{next}$를 같게 만들고 싶기 때문이다.</span>
+이러한 접근이 의미가 있으려면, source environment와 target environment가 같은 degrees of freedom을 가지는 것으로 가정해야하지만, 이 논문의 방법론은 <span style="color:red">두 환경 사이의 다른 degrees of freedom에서도 가능하다.</span> 다시말해 $\pi_{source}$와 $\pi_{target}$의 action들은 서로 다를 수도 있을 뿐만 아니라 action space간의 dimensionality가 서로 다를 수도 있다. 왜냐하면 하고자 하는 것은 결국 <span style="color:red">$\pi_{source}$와 $\pi_{target}$의 action들을 같게 하는 것이 아닌 next observation $o_{target}$과 $o_{next}$를 같게 만들고 싶기 때문이다.</span> 하지만 반대로 두 환경 사이의 observation의 dimensionality는 같아야 할지도 모른다.
 
 ### 2.3 Training of the inverse dynamics model
 
-TBU
+Inverse dynamics model의 input과 output에 대해 살펴보자. 먼저 input에는 이전 k만큼의 history $\tau_{H:H+k}$와 next observation $o_{H+k+1}$이고, output으로는 neural network $\phi$가 내뱉어주는 action $a_{H+k}$이다. 정리하면 다음과 같다.
+
+$$\phi : (o_H, a_H, o_{H+1}, a_{H+1}, ..., a_{k+H-1}, o_{k+H}, o_{k+H+1}) \mapsto a_{k+H}$$
+
+여기서 history $\tau_{H:H+k}$는 왜 같이 넣어주어야할까? 같이 넣으면 무슨 역할을 할까?
+
+질문에 대한 답변으로 논문에서는 neural network $\phi$가 dynamics에 존재하는 중요한 latent factors or temporal dependencies 암묵적으로 추론할 수 있다고 한다. 쉽게 말해 real world에서 여러가지 latent factors가 존재하는 lower-level details(friction, stiction, backlash, hysteresis, precise measurements, precise deformation, etc.)을 추론하기 위해서는 단기간의 state로는 힘들다는 것이다. 따라서 real world에서의 최근 $k$ 동안의 states와 actions를 보면서 latent factors or temporal dependencies를 추론하여 lower-level details을 파악하고자 하는 것이다.
 
 ### 2.4 Data collection / Exploration
 
-TBU
+**Data collection**: Training을 위한 data를 모으기 위해 사전에 준비해놓은 preliminary inverse dynamics model $\phi$을 통해 preliminary policy $\pi_{target}$을 사용한다. preliminary policy $\pi_{target}$를 이용하여 $\tau_{H:H+k}$를 생성한다. 그리고 모은 history로 새로운 policy $\pi_{target}$를 학습하는 데에 사용된다.
 
-### 2.5 Inverse dynamics neural network architecture
-
-TBU
-
----
+**Exploration**: preliminary policy $\pi_{target}$를 이용하여 모은 history의 action에 exploration을 주기 위해 noise를 추가한다. noise를 주는 이유는 training data를 다양하게 만들어서 inverse dynamics model을 더 빠르고 robust하게 학습하도록 만들기 위함이다. 이 때 noise를 너무 많이 주게되면 target trajectories(preliminary policy $\pi_{target}$를 이용하여 모은 history)에서 너무 먼 data들이 모아지고, noise를 너무 적게 주게되면 불충분한 exploration 때문에 inverse dynamics model이 매우 느리게 향상된다. 추가로, 모든 time step에 noise를 추가하는 것은 좋지 않다. 추가적으로, noise를 추가한 target trajectories 실행이 source environment에서 발생할 수 있는 것으로부터 매우 멀리 벗어나기 시작하면 reset을 하는 것이 더 효율적이라고 한다.
 
 ## 3. Experiments
-
-TBU
 
 ### 3.1 Simulated Environments – Sim1 to Sim2 transfer
 
