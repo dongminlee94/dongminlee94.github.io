@@ -112,7 +112,7 @@ author:
   name             : "Dongmin Lee"
   avatar           : "/assets/images/nick.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Reinforce yourself"
-  location         : "Seoul, South Korea"
+  location         : "MakinaRocks"
   email            : 
   home             : "https://dongminlee94.github.io" # null (default), "absolute or relative url to link to author home"
   links:
