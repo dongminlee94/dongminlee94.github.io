@@ -46,15 +46,17 @@ Abstract에서 말한 것과 같이 simulation을 통해 얻어진 states의 seq
 - $\pi$: a policy
 - $a = \pi(\tau_{-k:})$: a mapping from observations to action, that depends on the last $k$ observations
 
-끝으로, 목표로 하는 것은 **target environment에서 잘 수행하는 policy ($\pi_{source}$이 아닌) $\pi_{target}$를 찾는 것**이다.
+끝으로, 목표로 하는 것은 **target environment에서 잘 수행하는 policy ($\pi_{source}$가 아닌) $\pi_{target}$를 찾는 것**이다.
 
 ### 2.2 Transfer to the target environment
 
-이 논문에서 핵심적으로 말하고자 하는 방법은 우리가 목표로 하는 target envionment에서 re-used될 $pi_{source}$의 high-level gist를 transfer하는 방법이다. 아래의 그림을 보자.
+이 논문에서 핵심적으로 말하고자 하는 방법은 우리가 목표로 하는 target envionment에서 re-used될 $\alefpi_{source}$의 high-level gist를 transfer하는 방법이다. 아래의 그림을 보자.
 
 <center> <img src='../../assets/images/inverse_dynamics/fig1.png' width="800"> </center>
 
-전체적인 과정을 보자. 처음에 할 일은 history $\tau_{-k:}$를 얻는 일이다. 이 history $\tau_{-k:}$는 simulation이 아닌 real world system에서 얻어진다. 이렇게 얻은 history를 이용하여 주어진 source environment의 source policy를 통해 action $a_{source} = \pi_{source} (\tau_{-k:})$를 얻는다. 다음으로, 얻어진 action을 이용하여 source environment에서 next observation $\hat{o}_{next} = o(T_{source} (\tau_{-k:}))$를 얻는다. 마지막으로 history $\tau_{-k:}$와 source environment에서 얻어진 next observation $\hat{o}_{next}$를 이용하여 target environment에서 학습된 inverse dynamics model $\phi$를 통해 action $a_{target} = \phi (\tau_{-k:}, \hat{o}_{next})$를 얻는다.
+전체적인 과정을 보자. 처음에 할 일은 history $\tau_{-k:}$를 얻는 일이다. 이 history $\tau_{-k:}$는 simulation이 아닌 real world system에서 얻어진다. 이렇게 얻은 history를 이용하여 주어진 source environment의 source policy를 통해 action $a_{source} = \pi_{source} (\tau_{-k:})$를 얻는다. 다음으로, 얻어진 action을 이용하여 source environment에서 next observation $\hat{o}_{next}$를 얻는다. 마지막으로 history $\tau_{-k:}$와 source environment에서 얻어진 next observation $\hat{o}_{next}$를 이용하여 target environment에서 학습된 inverse dynamics model $\phi$를 통해 action $a_{target} = \phi (\tau_{-k:}, \hat{o}_{next})$를 얻는다.
+
+$o(T_{source} (\tau_{-k:}))$
 
 모든 과정을 정리하면 아래와 같다.
 
