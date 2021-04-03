@@ -6,7 +6,7 @@ categories:
   - RL
 ---
 
-<center> <img src='../../assets/images/inverse_dynamics/title.png' width="800"> </center>
+<center> <img src='../../assets/images/inverse_dynamics/title.png' width="700"> </center>
 
 - Author: Paul Christiano, Zain Shah, Igor Mordatch, Jonas Schneider, Trevor Blackwell, Joshua Tobin, [Pieter Abbeel](http://people.eecs.berkeley.edu/~pabbeel/), and Wojciech Zaremba
 - Proceeding: arXiv preprint 2016
@@ -88,10 +88,10 @@ TBU
 
 ### 3.1 Simulated Environments – Sim1 to Sim2 transfer
 
-<center> <img src='../../assets/images/inverse_dynamics/fig2.png' width="800"> </center>
+<center> <img src='../../assets/images/inverse_dynamics/fig2.png' width="700"> </center>
 
-<center> <img src='../../assets/images/inverse_dynamics/fig3.png' width="800"> </center>
+<center> <img src='../../assets/images/inverse_dynamics/fig3.png' width="600"> </center>
 
 ### 3.2 Physical interaction – Sim to Real transfer
 
-<center> <img src='../../assets/images/inverse_dynamics/fig4.png' width="800"> </center>
+<center> <img src='../../assets/images/inverse_dynamics/fig4.png' width="700"> </center>
