@@ -22,9 +22,9 @@ categories:
 
 ## 1. Introduction
 
-Simulation과 real world 간의 discrepancy를 줄이는 것은 상당히 challenge하다. 이 discrepancy를 줄이기 위한 방법은 크게 두 가지가 있다. 첫 번째는 조금 더 real world와 match되도록 simulator를 향상시키는 방법이다. 하지만 이 방법은 discrepancy가 계속 존재하고, 더 정확한 simulation은 오히려 속도가 느리다는 단점이 있다. 두 번째 방법은 real world의 넓은 범위에 적용되도록 control policy를 향상시키는 방법이다. 하지만 대부분 넓은 범위는 어렵고, 하나의 specific real world에서만 잘 되는 경우들이 많다. 이 논문은 두 번재 방법을 adaptive method를 사용하여 풀고자 한다.
+Simulation과 real world 간의 discrepancy를 줄이는 것은 상당히 challenge하다. 이 discrepancy를 줄이기 위한 방법은 크게 두 가지가 있다. 첫 번째는 조금 더 real world와 match되도록 simulator를 향상시키는 방법이다. 하지만 향상된 simulator에도 여전히 discrepancy가 존재하고, 더 정확한 simulation은 오히려 속도가 느리다는 단점이 있다. 두 번째 방법은 real world의 넓은 범위에 적용되도록 control policy를 향상시키는 방법이다. 하지만 대부분 넓은 범위는 어렵고, 하나의 specific real world에서만 잘 되는 경우들이 많다. 이 논문은 두 번재 방법을 adaptive method를 사용하여 풀고자 한다.
 
-Abstract에서 말한 것과 같이 simulation을 통해 얻어진 states의 sequence는 real world에서도 유용하다. 직관적으로, simulation에서 얻어진 policy는 high-level gist(e.g., overall trajectory)를 주는 반면, lower-level datails(e.g., flutuating temperature or motor backlash)은 주지 못한다. 따라서 이 논문에서는 simulation에서는 trajectory에 관한 next state를 알려주고, deep inverse dynamics model에서는 next state에 가장 적합한 real-world action을 내뱉어준다. <span style="color:red">결과적으로, simulation에서 얻어진 policy와는 다른 policy가 나올테지만, simluation과 real world에서는 동일한 next state를 가리키게 된다.</span> 이것이 이 논문의 핵심내용이다.
+Abstract에서 말한 것과 같이 simulation을 통해 얻어진 states의 sequence는 real world에서도 유용하다. 직관적으로, simulation에서 얻어진 policy는 high-level gist(e.g., overall trajectory)를 주는 반면, lower-level datails(e.g., flutuating temperature or motor backlash)은 주지 못한다. 따라서 이 논문에서는 simulation에서는 trajectory에 관한 next state를 알려주고, 학습된 deep inverse dynamics model에서는 그 next state에 가장 적합한 real-world action을 내뱉어준다. <span style="color:red">결과적으로, simulation에서 얻어진 policy와는 다른 policy가 나올테지만, simluation과 real world에서는 동일한 next state를 가리키게 된다.</span> 이것이 이 논문의 핵심내용이다.
 
 실험으로는 1) Simulation 1 to Simulation 2 Transfer: 하나의 simulation에서 다른 simulation으로 transfer하는 실험과 2) Simulation to Real Transfer with Fetch: 실제 로봇을 이용하여 simulation에서 real robot으로 transfer하는 실험을 하였다.
 
@@ -46,13 +46,15 @@ Abstract에서 말한 것과 같이 simulation을 통해 얻어진 states의 seq
 - $\pi$: a policy
 - $a = \pi(\tau_{-k:})$: a mapping from observations to action, that depends on the last $k$ observations
 
-끝으로, 목표로 하는 것은 <span style="color:red">target environment에서 잘 수행하는 policy ($\pi_{source}$가 아닌) $\pi_{target}$를 찾는 것</span>이다.
+이러한 setting을 가지고 목표로 하는 것은 <span style="color:red">target environment에서 잘 수행하는 policy ($\pi_{source}$가 아닌) $\pi_{target}$를 찾는 것</span>이다.
 
 ### 2.2 Transfer to the target environment
 
-이 논문에서 핵심적으로 말하고자 하는 방법은 우리가 목표로 하는 target envionment에서 <span style="color:red">re-used될 $\pi_{source}$의 high-level gist를 transfer하는 방법</span>이다. 아래의 그림을 보자.
+이 논문에서 핵심적으로 말하고자 하는 방법은 우리가 목표로 하는 target envionment에서 주어진 <span style="color:red">$\pi_{source}$의 high-level gist를 transfer하는 방법</span>이다. 아래의 그림을 보자.
 
 <center> <img src='../../assets/images/inverse_dynamics/fig1.png' width="800"> </center>
+
+<br/>
 
 전체적인 과정을 보자. 처음에 할 일은 history $\tau_{-k:}$를 얻는 일이다. 이 history $\tau_{-k:}$는 simulation이 아닌 real world system에서 얻어진다.
 
