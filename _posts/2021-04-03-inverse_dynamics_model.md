@@ -53,7 +53,7 @@ Abstract에서 말한 것과 같이 simulation을 통해 얻어진 states의 seq
 이 논문에서 핵심적으로 말하고자 하는 방법은 우리가 목표로 하는 target envionment에서 주어진 <span style="color:red">$\pi_{source}$의 high-level gist를 transfer하는 방법</span>이다. 아래의 그림을 보자.
 
 <center> <img src='../../assets/images/inverse_dynamics/fig1.png' width="800"> </center>
-
+<br/>
 전체적인 과정을 보자.
 
 1) 처음에 할 일은 history $\tau_{-k:}$를 얻는 일이다. 이 history $\tau_{-k:}$는 simulation이 아닌 real world system에서 얻어진다.
