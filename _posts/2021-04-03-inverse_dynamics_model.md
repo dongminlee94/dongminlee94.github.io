@@ -50,7 +50,7 @@ Abstract에서 말한 것과 같이 simulation을 통해 얻어진 states의 seq
 
 ### 2.2 Transfer to the target environment
 
-이 논문에서 핵심적으로 말하고자 하는 방법은 우리가 목표로 하는 target envionment에서 r**e-used될 $\pi_{source}$의 high-level gist를 transfer하는 방법**이다. 아래의 그림을 보자.
+이 논문에서 핵심적으로 말하고자 하는 방법은 우리가 목표로 하는 target envionment에서 **re-used될 $\pi_{source}$의 high-level gist를 transfer하는 방법**이다. 아래의 그림을 보자.
 
 <center> <img src='../../assets/images/inverse_dynamics/fig1.png' width="800"> </center>
 
