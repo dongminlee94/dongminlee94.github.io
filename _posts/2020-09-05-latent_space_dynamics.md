@@ -6,26 +6,12 @@ categories:
   - RL
 ---
 
-## Outline
-  
-  1. [Embed to Control: Locally Linear Latent Dynamics Model for Control from Raw Images (2015.11)](#1)
-  2. [Learning Latent Plans from Play (2019.03)](#2)
-  3. [Robot Motion Planning in Learned Latent Spaces (2019.07)](#3)
-  4. [Dynamics-Aware Embeddings (2019.08)](#4)
-  5. [Cross-Domain Motion Transfer via Safety-Aware Shared Latent Space Modeling (2020.04)](#5)
-  6. [Character Controllers using Motion VAEs (2020.07)](#6)
-  7. [Nonparametric Motion Retargeting for Humanoid Robots on Shared Latent Space (2020.07)](#7)
-  8. [Goal-Aware Prediction: Learning to Model What Matters (2020.07)](#8)
-  9. [Heteroscedastic Uncertainty for Robust Generative Latent Dynamics (2020.10)](#9)
-
 - **Constraint conditions**
   - Papers including VAE
   - Papers including RL
   - Papers excluding Model-Based RL
 
 ---
-
-<a name="1"></a>
 
 ## Embed to Control: Locally Linear Latent Dynamics Model for Control from Raw Images (2015.11)
 
@@ -48,8 +34,6 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 <center> <img src='../../assets/images/latent_dynamics/e2c.png' width="700"> </center>
 
 ---
-
-<a name="2"></a>
 
 ## Learning Latent Plans from Play (2019.03)
 
@@ -74,8 +58,6 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 
 ---
 
-<a name="3"></a>
-
 ## Robot Motion Planning in Learned Latent Spaces (2019.07)
 
 - Author: [Brian Ichter](https://research.google/people/BrianAndrewIchter/), Marco Pavone
@@ -83,8 +65,6 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 - Paper: [PDF](https://ieeexplore.ieee.org/abstract/document/8653875)
 
 ---
-
-<a name="4"></a>
 
 ## Dynamics-Aware Embeddings (2019.08)
 
@@ -105,8 +85,6 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 <center> <img src='../../assets/images/latent_dynamics/dyne.png' width="700"> </center>
 
 ---
-
-<a name="5"></a>
 
 ## Cross-Domain Motion Transfer via Safety-Aware Shared Latent Space Modeling (2020.04)
 
@@ -129,8 +107,6 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 <center> <img src='../../assets/images/latent_dynamics/lwae_slwae.png' width="700"> </center>
 
 ---
-
-<a name="6"></a>
 
 ## Character Controllers using Motion VAEs (2020.07)
 
@@ -155,8 +131,6 @@ Motion VAE 학습이 끝나면, 학습된 Motion VAE 모델과 함께 더 정교
 
 ---
 
-<a name="7"></a>
-
 ## Nonparametric Motion Retargeting for Humanoid Robots on Shared Latent Space (2020.07)
 
 - Author: [Sungjoon Choi](https://sites.google.com/view/sungjoon-choi/), Matthew Pan, Joohyung Kim
@@ -166,8 +140,6 @@ Motion VAE 학습이 끝나면, 학습된 Motion VAE 모델과 함께 더 정교
 
 ---
 
-<a name="8"></a>
-
 ## Goal-Aware Prediction: Learning to Model What Matters (2020.07)
 
 - Author: Suraj Nair, Silvio Savarese, [Chelsea Finn](https://ai.stanford.edu/~cbfinn/)
@@ -175,8 +147,6 @@ Motion VAE 학습이 끝나면, 학습된 Motion VAE 모델과 함께 더 정교
 - Paper: [PDF](https://arxiv.org/pdf/2007.07170.pdf)
 
 ---
-
-<a name="9"></a>
 
 ## Heteroscedastic Uncertainty for Robust Generative Latent Dynamics (2020.10)
 

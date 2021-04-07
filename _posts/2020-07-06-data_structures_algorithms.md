@@ -6,18 +6,6 @@ categories:
   - CS
 ---
 
-## Outline
-
-- Sort
-- Search
-- Array vs Linked list
-- Tree vs Graph
-- Heap
-- Map
-- Spanning Tree
-- Kruskal vs Prim
-- Kruskal & Prim vs Dijkstra
-
 [알고리즘 참고 링크들 정리](https://dongminlee94.github.io/algorithms_references/)
 
 ---

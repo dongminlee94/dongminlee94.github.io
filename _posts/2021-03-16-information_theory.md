@@ -6,16 +6,6 @@ categories:
   - Math
 ---
 
-## Outline
-  
-- Entropy
-- Cross Entropy
-- KL Divergence
-- Conditional Entropy
-- Mutual Information
-
----
-
 ## 1. Entropy
 
 ### 1.1 Definition

@@ -6,23 +6,6 @@ categories:
   - RL
 ---
 
-## Outline
-  
-  1. [Playing Atari with Deep Reinforcement Learning (2013.12)](#1)
-  2. [Human-Level Control through Deep Reinforcement Learning (2015.02)](#2)
-  3. [Deep Reinforcement Learning with Double Q-learning (2015.09)](#3)
-  4. [Prioritized Experience Replay (2015.11)](#4)
-  5. [Dueling Network Architectures for Deep Reinforcement Learning (2015.11)](#5)
-  6. [Noisy Networks for Exploration (2017.06)](#6)
-  7. [A Distributional Perspective on Reinforcement Learning (2017.07)](#7)
-  8. [Rainbow: Combining Improvements in Deep Reinforcement Learning (2017.10)](#8)
-  9. [Distributional Reinforcement Learning with Quantile Regression (2017.10)](#9)
-  10. [Implicit Quantile Networks for Distributional Reinforcement Learning (2018.06)](#10)
-
----
-
-<a name="1"></a>
-
 ## Playing Atari with Deep Reinforcement Learning (2013.12)
 
 - Author: Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, Martin Riedmiller
@@ -30,8 +13,6 @@ categories:
 - Paper: [PDF](https://arxiv.org/pdf/1312.5602.pdf)
 
 ---
-
-<a name="2"></a>
 
 ## Human-Level Control through Deep Reinforcement Learning (2015.02)
 
@@ -41,8 +22,6 @@ categories:
 
 ---
 
-<a name="3"></a>
-
 ## Deep Reinforcement Learning with Double Q-learning (2015.09)
 
 - Author: Hado van Hasselt, Arthur Guez, David Silver
@@ -50,8 +29,6 @@ categories:
 - Paper: [PDF](https://arxiv.org/pdf/1509.06461.pdf)
 
 ---
-
-<a name="4"></a>
 
 ## Prioritized Experience Replay (2015.11)
 
@@ -61,8 +38,6 @@ categories:
 
 ---
 
-<a name="5"></a>
-
 ## Dueling Network Architectures for Deep Reinforcement Learning (2015.11)
 
 - Author: Ziyu Wang, Tom Schaul, Matteo Hessel, Hado van Hasselt, Marc Lanctot, Nando de Freitas
@@ -70,8 +45,6 @@ categories:
 - Paper: [PDF](https://arxiv.org/pdf/1511.06581.pdf)
 
 ---
-
-<a name="6"></a>
 
 ## Noisy Networks for Exploration (2017.06)
 
@@ -81,8 +54,6 @@ categories:
 
 ---
 
-<a name="7"></a>
-
 ## A Distributional Perspective on Reinforcement Learning (2017.07)
 
 - Author: Marc G. Bellemare, Will Dabney, Rémi Munos
@@ -90,8 +61,6 @@ categories:
 - Paper: [PDF](https://arxiv.org/pdf/1707.06887.pdf)
 
 ---
-
-<a name="8"></a>
 
 ## Rainbow: Combining Improvements in Deep Reinforcement Learning (2017.10)
 
@@ -101,8 +70,6 @@ categories:
 
 ---
 
-<a name="9"></a>
-
 ## Distributional Reinforcement Learning with Quantile Regression (2017.10)
 
 - Author: Will Dabney, Mark Rowland, Marc G. Bellemare, Rémi Munos
@@ -110,8 +77,6 @@ categories:
 - Paper: [PDF](https://arxiv.org/pdf/1710.10044.pdf)
 
 ---
-
-<a name="10"></a>
 
 ## Implicit Quantile Networks for Distributional Reinforcement Learning (2018.06)
 

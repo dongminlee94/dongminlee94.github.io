@@ -6,16 +6,6 @@ categories:
   - Math
 ---
 
-## Outline
-  
-- Span
-- Linear Independence
-- Rank
-- Inner Product
-- Norm
-
----
-
 ## Span (= Subspace)
 
 - **Definition**: Given a set of vectors $v_1, \cdots, v_p \in \mathbb{R}^n$, Span ${v_1, \cdots, v_p}$ is defined as the set of all linear combinations of $v_1, \cdots, v_p$ (벡터들의 집합이 주어졌을 때, 선형 결합으로 나올 수 있는 모든 벡터들의 집합)

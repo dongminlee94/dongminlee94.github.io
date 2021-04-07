@@ -6,19 +6,6 @@ categories:
   - RL
 ---
 
-## Outline
-  
-  1. [Dynamic Terrain Traversal Skills Using Reinforcement Learning (2015)](#1)
-  2. [Terrain-Adaptive Locomotion Skills Using Deep Reinforcement Learning (2016)](#2)
-  3. [Learning Locomotion Skills Using DeepRL: Does the Choice of Action Space Matter? (2017)](#3)
-  4. [DeepLoco: Dynamic Locomotion Skills Using Hierarchical Deep Reinforcement Learning (2017)](#4)
-  5. [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills (2018)](#5)
-  6. [SFV: Reinforcement Learning of Physical Skills from Videos (2018)](#6)
-
----
-
-<a name="1"></a>
-
 ## Dynamic Terrain Traversal Skills Using Reinforcement Learning (2015)
 
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), Glen Berseth, [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
@@ -41,8 +28,6 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 
 ---
 
-<a name="2"></a>
-
 ## Terrain-Adaptive Locomotion Skills Using Deep Reinforcement Learning (2016)
 
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), Glen Berseth, [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
@@ -51,8 +36,6 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 - Videos: [Main video](https://www.youtube.com/watch?v=KPfzRSBzNX4), [Supplementary video](https://www.youtube.com/watch?v=A0BmHoujP9k)
 
 ---
-
-<a name="3"></a>
 
 ## Learning Locomotion Skills Using DeepRL: Does the Choice of Action Space Matter? (2017)
 
@@ -63,8 +46,6 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 
 ---
 
-<a name="4"></a>
-
 ## DeepLoco: Dynamic Locomotion Skills Using Hierarchical Deep Reinforcement Learning (2017)
 
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), Glen Berseth, KangKang Yin, [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
@@ -74,8 +55,6 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 
 ---
 
-<a name="5"></a>
-
 ## DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills (2018)
 
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), [Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/), [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/), [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
@@ -84,8 +63,6 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 - Video: [Main video](https://www.youtube.com/watch?v=vppFvq2quQ0), [Supplementary video](https://www.youtube.com/watch?v=8KdDwRLtNHQ)
 
 ---
-
-<a name="6"></a>
 
 ## SFV: Reinforcement Learning of Physical Skills from Videos (2018)
 

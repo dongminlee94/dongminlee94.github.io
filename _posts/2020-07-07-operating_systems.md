@@ -6,21 +6,6 @@ categories:
   - CS
 ---
 
-## Outline
-
-- Process와 Thread
-- Multi-processing과 Multi-threading
-- Memory Structure (Code, Data, Stack, Heap)
-- Context Switch
-- Scheduling (FCFS, SJF, HRRN, SRTF, RR)
-- Process Synchronization
-- Mutex와 Semaphore
-- Deadlock
-- Synchronous와 Asynchronous
-- User-level Thread와 Kernel-level Thread
-
----
-
 ## Process와 Thread
 
 ### Process (프로세스)
