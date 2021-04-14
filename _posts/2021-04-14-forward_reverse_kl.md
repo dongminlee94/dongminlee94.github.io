@@ -59,7 +59,6 @@ Forward KL의 핵심 수식은 $\log \frac{p(x)}{q(x)}$이다. 이때 $q(x)$가 
 그 결과 분포는 아래와 같이 fitting하게 된다.
 
 <center> <img src='../../../assets/images/kl/forward_kl.png' width="700"> </center>
-<br/>
 
 최소화된 이후의 KLD 값은 상당히 클 수가 있다. 왜냐하면 $p(x) > 0$인 전체 범위를 커버하려고 하기 때문에 $q(x)$를 정확하게 모델링하지 않으면 위와 같은 문제가 생긴다. 그래서 위의 경우에는 두 개의 Gaussian의 mixture model로 정하면 깔끔하게 맞을 것이다.
 
@@ -82,7 +81,6 @@ Reverse KL의 핵심 수식은 $\log \frac{q(x)}{p(x)}$이다. 이 경우에도 
 그러면 분포 $Q$를 어디에 모으는 것이 가장 좋을까? $\log \frac{q(x)}{p(x)}$을 보면, $p(x)=q(x)$일 때 이 값이 $\log 1 = 0$이 된다. 즉, $Q$를 최대한 샤프하게 모은 다음 $P$ 분포와 $Q$ 분포를 최대한 똑같이 맞춰야하는 것이다. 이러한 원리로 <span style="color:red">$P$ 분포에 존재하는 여러 개의 mode들 중, 하나의 mode에만 집중해서 $Q$ 분포를 맞추게 하는 것이다.</span> 이러한 이유로 zero-forcing, mode-seeking, exclusive, sharp의 속성을 갖게 된다.
 
 <center> <img src='../../../assets/images/kl/reverse_kl.png' width="700"> </center>
-<br/>
 
 마지막으로 예를 하나 들어보자. 위의 그림처럼 분포 $P$의 왼쪽 분포가 남자 사진, 오른쪽 분포가 여자 사진이라고 하자. 그 때 생성 모델을 만든다고 하면 forward KL을 사용한 $Q$가 좋을까? 아니면 reverse KL을 사용한 $Q$가 좋을까? 당연히 reverse RL을 사용한 분포를 원할 것이다. 우리는 남자, 여자 사이에 있는 이상한 사진을 생성하는 것이 아닌 남자면 남자, 여자면 여자인 어떠한 명확한 사진을 생성하고 싶기 때문이다.
 
