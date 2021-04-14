@@ -12,14 +12,14 @@ categories:
 - Foward KL divergence
   - Zero-avoiding, mean-seeking, inclusive, spreading
   - 핵심 수식: $\log \frac{p(x)}{q(x)}$
-  - 만약 모델링한 분포 $Q$가 target 분포 $P$와 매우 가까울 수 있는 경우(최소화시켰을 때 모양이 매우 비슷할 수 있는 경우), 또는 $p(x) > 0$인 모든 x를 커버해야하는 경우에 사용
-  - 따라서 분포 $P$가 0이 되는 지점에서의 예측값을 크게 신경쓰지 않는다. (전체 숲을 보는 것)
+  - 만약 모델링한 분포 $Q$가 target 분포 $P$와 매우 가까울 수 있는 경우(최소화시켰을 때 모양이 매우 비슷할 수 있는 경우), 또는 target 분포의 모든 부분을 커버해야하는 경우에 사용
+  - 따라서 분포 $P$에서 $p(x)$가 0이 되는 지점에서의 예측값을 크게 신경쓰지 않는다. (전체 숲을 보는 것)
 - Reverse KL divergence
   - Zero-forcing, mode-seeking, exclusive, sharp
   - 핵심 수식: $\log \frac{q(x)}{p(x)}$
-  - 만약 모델링한 분포 $Q$가 target 분포 $P$와 가까울 수 없는 경우(최소화시켰을 때 모양이 비슷하게 나오지 않을 수 있는 경우), 또는 target 분포의 일부 부분이라고 캡쳐해도 좋은 경우에 사용
-  - 따라서 분포 $Q$가 0이 되는 지점에서의 예측값을 크게 신경쓰지 않는다. (각각의 나무 중 하나의 나무를 보는 것)
-- 기본적으로 KL divergence라고 하면 forward 방식을 가리키며, Variational AutoEncoder(VAE)에는 보통 reverse 방식을 사용한다.(때때로 아닐수도 있다.)
+  - 만약 모델링한 분포 $Q$가 target 분포 $P$와 가까울 수 없는 경우(최소화시켰을 때 모양이 비슷하게 나오지 않을 수 있는 경우), 또는 target 분포의 일부 부분을 캡쳐해도 좋은 경우에 사용
+  - 따라서 분포 $Q$에서 $q(x)$가 0이 되는 지점에서의 예측값을 크게 신경쓰지 않는다. (각각의 나무 중 하나의 나무를 보는 것)
+- 기본적으로 KL divergence라고 하면 forward 방식을 가리키며, Variational AutoEncoder(VAE)에는 보통 reverse 방식을 사용한다. 때때로 아닐수도 있다.
 
 ---
 
@@ -46,7 +46,7 @@ $$\begin{align} \notag D_{KL}(P \parallel Q) &:= H(P,Q) - H(P)
 
 Forward KL의 Definition은 다음과 같다.
 
-$$D_{KL}(P \parallel Q) := \sum_x p(x) \big( \log {\color{red}\frac{p(x)}{q(x)}} \big)$$
+$$D_{KL} (P \parallel Q) := \sum_x p(x) \big( \log \frac{p(x)}{q(x)} \big)$$
 
 두 확률분포간 거리를 최소화시키고자 할때 보통 $P$를 target, true 분포가 들어가고, $Q$는 최적화시키고자 하는 paramterized 분포가 들어가고 $P$와 가깝도록 만들고자 한다.
 
@@ -68,7 +68,7 @@ Forward KL의 핵심 수식은 $\log \frac{p(x)}{q(x)}$이다. 이때 $q(x)$가 
 
 Reverse KL의 Definition은 다음과 같다.
 
-$$D_{KL}(Q \parallel P) := \sum_x q(x) \big( \log {\color{red}\frac{q(x)}{p(x)}} \big)$$
+$$D_{KL} (Q \parallel P) := \sum_x q(x) \big( \log \frac{q(x)}{p(x)} \big)$$
 
 Forward KL과 마찬가지로, 두 확률분포간 거리를 최소화시키고자 할때 보통 $P$를 target, true 분포가 들어가고, $Q$는 최적화시키고자 하는 paramterized 분포가 들어가고 $P$와 가깝도록 만들고자 한다.
 
