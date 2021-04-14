@@ -4,6 +4,7 @@ toc: true
 toc_sticky: true
 categories:
   - Math
+  - ML
 ---
 
 ## 1. Entropy
