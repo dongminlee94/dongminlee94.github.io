@@ -58,7 +58,7 @@ Forward KL의 핵심 수식은 $\log \frac{p(x)}{q(x)}$이다. 이때 $q(x)$가 
 
 그 결과 분포는 아래와 같이 fitting하게 된다.
 
-<center> <img src='../../assets/images/kl/forward_kl.png' width="700"> </center>
+<center> <img src='../assets/images/kl/forward_kl.png' width="700"> </center>
 
 최소화된 이후의 KLD 값은 상당히 클 수가 있다. 왜냐하면 $p(x) > 0$인 전체 범위를 커버하려고 하기 때문에 $q(x)$를 정확하게 모델링하지 않으면 위와 같은 문제가 생긴다. 그래서 위의 경우에는 두 개의 Gaussian의 mixture model로 정하면 깔끔하게 맞을 것이다.
 
@@ -80,7 +80,7 @@ Reverse KL의 핵심 수식은 $\log \frac{q(x)}{p(x)}$이다. 이 경우에도 
 
 그러면 분포 $Q$를 어디에 모으는 것이 가장 좋을까? $\log \frac{q(x)}{p(x)}$을 보면, $p(x)=q(x)$일 때 이 값이 $\log 1 = 0$이 된다. 즉, $Q$를 최대한 샤프하게 모은 다음 $P$ 분포와 $Q$ 분포를 최대한 똑같이 맞춰야하는 것이다. 이러한 원리로 **$P$ 분포에 존재하는 여러 개의 mode들 중, 하나의 mode에만 집중해서 $Q$ 분포를 맞추게 하는 것이다.** 이러한 이유로 zero-forcing, mode-seeking, exclusive, sharp의 속성을 갖게 된다.
 
-<center> <img src='../../assets/images/kl/reverse_kl.png' width="700"> </center>
+<center> <img src='../assets/images/kl/reverse_kl.png' width="700"> </center>
 
 만약 위의 그림처럼 분포 $P$가
 
