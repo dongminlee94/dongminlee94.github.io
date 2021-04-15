@@ -20,7 +20,7 @@ title                    : "Dongmin's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dongmin Lee"
-description              : "Reinforce yourself"
+description              : "ML Research Engineer"
 url                      : "https://dongminlee94.github.io"
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -111,14 +111,14 @@ analytics:
 author:
   name             : "Dongmin Lee"
   avatar           : "/assets/images/nick.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Reinforce yourself"
+  bio              : "ML Research Engineer"
   location         : "MakinaRocks"
   email            : 
   home             : "https://dongminlee94.github.io" # null (default), "absolute or relative url to link to author home"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:kid33629@gmail.com
+      url: mailto:dongmin.lee@makinarocks.ai
     # - label: "CV"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://drive.google.com/file/d/1dBtWr9csOkoiIbNvVWdIayUzV1_zHu5C/view?usp=sharing"
