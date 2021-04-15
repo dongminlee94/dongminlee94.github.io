@@ -12,12 +12,12 @@ categories:
 - Foward KL divergence
   - Zero-avoiding, mean-seeking, inclusive, spreading
   - 핵심 수식: $\log \frac{p(x)}{q(x)}$
-  - 만약 모델링한 분포 $Q$가 target 분포 $P$와 매우 가까울 수 있는 경우(최소화시켰을 때 모양이 매우 비슷할 수 있는 경우), 또는 target 분포의 모든 부분을 커버해야하는 경우에 사용
+  - 만약 parameterized 분포 $Q$가 target 분포 $P$와 매우 가까울 수 있는 경우(최소화시켰을 때 모양이 매우 비슷할 수 있는 경우), 또는 target 분포의 모든 부분을 커버해야하는 경우에 사용
   - 따라서 분포 $P$에서 $p(x)$가 0이 되는 지점에서의 예측값을 크게 신경쓰지 않는다. (전체 숲을 보는 것)
 - Reverse KL divergence
   - Zero-forcing, mode-seeking, exclusive, sharp
   - 핵심 수식: $\log \frac{q(x)}{p(x)}$
-  - 만약 모델링한 분포 $Q$가 target 분포 $P$와 가까울 수 없는 경우(최소화시켰을 때 모양이 비슷하게 나오지 않을 수 있는 경우), 또는 target 분포의 일부 부분을 캡쳐해도 좋은 경우에 사용
+  - 만약 parameterized 분포 $Q$가 target 분포 $P$와 가까울 수 없는 경우(최소화시켰을 때 모양이 비슷하게 나오지 않을 수 있는 경우), 또는 target 분포의 일부 부분을 캡쳐해도 좋은 경우에 사용
   - 따라서 분포 $Q$에서 $q(x)$가 0이 되는 지점에서의 예측값을 크게 신경쓰지 않는다. (각각의 나무 중 하나의 나무를 보는 것)
 - 기본적으로 KL divergence라고 하면 forward 방식을 가리키며, Variational AutoEncoder(VAE)에는 보통 reverse 방식을 사용한다. 때때로 아닐수도 있다.
 
@@ -54,7 +54,7 @@ Forward KL은 **zero-avoiding, mean-seeking, inclusive, spreading**등의 이름
 
 Forward KL의 핵심 수식은 $\log \frac{p(x)}{q(x)}$이다. 이때 $q(x)$가 0인 지점에서 만약 $p(x)$의 값이 0보다 크다면 어떻게 될까? $0.0001 / 0 = \infty$이므로, 그 지점에서의 길이비는 무한대가 될 것이다.
 
-따라서 Forward KL을 minimize하려면, 이러한 케이스를 무조건 막아야만 한다. 다시 말해 $p(x)$의 값이 조금이라도 존재하는 지점이 있으면, <span style="color:red">무조건 모델의 분포 $Q$로 해당 범위를 커버해서 $Q$가 0이 되는 케이스를 반드시 막아야만한다.</span> 그러려면 최대한 분포 $Q$가 0이 되는걸 피해야하기 때문에 분포 $P$를 포함해야하고, 그러기 위해 넓게 퍼지게 된다. 결국 zero-avoiding, mean-seeking, inclusive, spreading의 속성이 되는 것이다.
+따라서 Forward KL을 minimize하려면, 이러한 케이스를 무조건 막아야만 한다. 다시 말해 $p(x)$의 값이 조금이라도 존재하는 지점이 있으면, <span style="color:red">무조건 모델의 분포 $Q$로 해당 범위를 커버해서 $Q$가 0이 되는 케이스를 반드시 막아야한다.</span> 그러려면 최대한 분포 $Q$가 0이 되는걸 피해야하기 때문에 분포 $P$를 포함해야하고, 그러기 위해 넓게 퍼지게 된다. 결국 zero-avoiding, mean-seeking, inclusive, spreading의 속성이 되는 것이다.
 
 그 결과 분포는 아래와 같이 fitting하게 된다.
 
@@ -76,7 +76,7 @@ Reverse KL은 **zero-forcing, mode-seeking, exclusive, sharp**등의 이름으�
 
 Reverse KL의 핵심 수식은 $\log \frac{q(x)}{p(x)}$이다. 이 경우에도 분모 $p(x)$가 0인 지점에서, $q(x)$의 값이 0보다 크다면 어떻게 될까? 위와 동일한 원리로 $0.0001 / 0 = \infty$이므로, 그 지점에서의 길이비는 무한대가 될 것이다.
 
-마찬가지로 Reverse KL을 minimize하기 위해서는 이러한 케이스를 피해야만 한다. 그런데 우리는 분포 $P$를 건드릴 수 없다. 우리는 모델의 분포인 $Q$만 학습할 수 있다. <span style="color:red">결국 $p(x)$가 0인 지점에 대해서 우리가 취할 수 있는 행동은 오직 그 지점의 $q(x)$ 값 또한 0이 되도록 만드는 수 밖에 없다.</span> 즉, 여기서는 반대로 $p(x)$가 0인 지점에서 반드시 $q(x)$가 0이 되어야한다. 따라서 $P$ 분포를 절대 퍼트려서는 안되고, 샤프하게 한 곳으로 모아야한다.
+마찬가지로 Reverse KL을 minimize하기 위해서는 이러한 케이스를 피해야만 한다. 그런데 우리는 분포 $P$를 건드릴 수 없다. 우리는 모델의 분포인 $Q$만 학습할 수 있다. <span style="color:red">결국 $p(x)$가 0인 지점에 대해서 우리가 취할 수 있는 행동은 오직 그 지점의 $q(x)$ 값 또한 0이 되도록 만들어야 한다.</span> 즉, 여기서는 반대로 $p(x)$가 0인 지점에서 반드시 $q(x)$가 0이 되어야한다. 따라서 $P$ 분포를 절대 퍼트려서는 안되고, 샤프하게 한 곳으로 모아야한다.
 
 그러면 분포 $Q$를 어디에 모으는 것이 가장 좋을까? $\log \frac{q(x)}{p(x)}$을 보면, $p(x)=q(x)$일 때 이 값이 $\log 1 = 0$이 된다. 즉, $Q$를 최대한 샤프하게 모은 다음 $P$ 분포와 $Q$ 분포를 최대한 똑같이 맞춰야하는 것이다. 이러한 원리로 <span style="color:red">$P$ 분포에 존재하는 여러 개의 mode들 중, 하나의 mode에만 집중해서 $Q$ 분포를 맞추게 하는 것이다.</span> 이러한 이유로 zero-forcing, mode-seeking, exclusive, sharp의 속성을 갖게 된다.
 
