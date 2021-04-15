@@ -1,5 +1,5 @@
 ---
-title: "Forward KL vs Reverse RL"
+title: "Forward KL vs Reverse KL"
 toc: true
 toc_sticky: true
 categories:
@@ -23,7 +23,7 @@ categories:
 
 ---
 
-## 2. KL-Divergence
+## 2. KL Divergence
 
 Definition은 다음과 같다.
 
@@ -64,7 +64,7 @@ Forward KL의 핵심 수식은 $\log \frac{p(x)}{q(x)}$이다. 이때 $q(x)$가 
 
 ---
 
-## 4. Reverse KL-Divergence
+## 4. Reverse KL Divergence
 
 Reverse KL의 Definition은 다음과 같다.
 
