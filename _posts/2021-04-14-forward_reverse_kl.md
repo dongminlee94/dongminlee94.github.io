@@ -12,14 +12,14 @@ categories:
 - Foward KL divergence
   - Zero-avoiding, mean-seeking, inclusive, spreading
   - 핵심 수식: $\log \frac{p(x)}{q(x)}$
-  - 만약 parameterized 분포 $Q$가 target 분포 $P$와 매우 가까울 수 있는 경우(최소화시켰을 때 모양이 매우 비슷할 수 있는 경우), 또는 target 분포의 모든 부분을 커버해야하는 경우에 사용
+  - 만약 학습시켜야 할 parameterized 분포 $Q$가 target 분포 $P$와 매우 가까울 수 있는 경우(최소화시켰을 때 모양이 매우 비슷할 수 있는 경우), 또는 target 분포의 모든 부분을 커버해야하는 경우에 사용
   - 따라서 분포 $P$에서 $p(x)$가 0이 되는 지점에서의 예측값을 크게 신경쓰지 않는다. (전체 숲을 보는 것)
 - Reverse KL divergence
   - Zero-forcing, mode-seeking, exclusive, sharp
   - 핵심 수식: $\log \frac{q(x)}{p(x)}$
-  - 만약 parameterized 분포 $Q$가 target 분포 $P$와 가까울 수 없는 경우(최소화시켰을 때 모양이 비슷하게 나오지 않을 수 있는 경우), 또는 target 분포의 일부 부분을 캡쳐해도 좋은 경우에 사용
+  - 만약 학습시켜야 할 parameterized 분포 $Q$가 target 분포 $P$와 가까울 수 없는 경우(최소화시켰을 때 모양이 비슷하게 나오지 않을 수 있는 경우), 또는 target 분포의 일부 부분을 캡쳐해도 좋은 경우에 사용
   - 따라서 분포 $Q$에서 $q(x)$가 0이 되는 지점에서의 예측값을 크게 신경쓰지 않는다. (각각의 나무 중 하나의 나무를 보는 것)
-- 기본적으로 KL divergence라고 하면 forward 방식을 가리키며, Variational AutoEncoder(VAE)에는 보통 reverse 방식을 사용한다. 때때로 아닐수도 있다.
+- 기본적으로 KL divergence라고 하면 forward 방식을 가리키며, Variational AutoEncoder(VAE)에는 reverse 방식을 사용한다.
 
 ---
 
@@ -82,7 +82,7 @@ Reverse KL의 핵심 수식은 $\log \frac{q(x)}{p(x)}$이다. 이 경우에도 
 
 <center> <img src='../../../assets/images/kl/reverse_kl.png' width="700"> </center>
 
-마지막으로 예를 하나 들어보자. 위의 그림처럼 분포 $P$의 왼쪽 분포가 남자 사진, 오른쪽 분포가 여자 사진이라고 하자. 그 때 생성 모델을 만든다고 하면 forward KL을 사용한 $Q$가 좋을까? 아니면 reverse KL을 사용한 $Q$가 좋을까? 당연히 reverse RL을 사용한 분포를 원할 것이다. 우리는 남자, 여자 사이에 있는 이상한 사진을 생성하는 것이 아닌 남자면 남자, 여자면 여자인 어떠한 명확한 사진을 생성하고 싶기 때문이다.
+마지막으로 예를 하나 들어보자. 위의 그림처럼 분포 $P$의 왼쪽 분포가 남자 사진, 오른쪽 분포가 여자 사진이라고 하자. 그 때 생성 모델을 만든다고 하면 forward KL을 사용한 $Q$가 좋을까? 아니면 reverse KL을 사용한 $Q$가 좋을까? 당연히 reverse KL을 사용한 분포를 원할 것이다. 우리는 남자, 여자 사이에 있는 이상한 사진을 생성하는 것이 아닌 남자면 남자, 여자면 여자인 어떠한 명확한 사진을 생성하고 싶기 때문이다.
 
 ---
 
