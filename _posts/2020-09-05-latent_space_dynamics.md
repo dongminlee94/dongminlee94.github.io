@@ -6,7 +6,8 @@ categories:
   - RL
 ---
 
-**Constraint conditions**
+Constraint conditions
+
 - Papers including VAE
 - Papers including RL
 - Papers excluding Model-Based RL
@@ -113,7 +114,7 @@ E2C는 VAE를 이용하여 dynamics가 locally linear한 경우로 제한된 lat
 - Author: Hung Yu Ling, Fabio Zinno, George Cheng, [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
 - Proceeding: ACM Transactions on Graphics (TOG) (Proc. SIGGRAPH 2020)
 - Paper: [PDF](https://dl.acm.org/doi/pdf/10.1145/3386569.3392422)
-- Video: [Main video](https://www.youtube.com/watch?v=Zm3G9oqmQ4Y)
+- Video: [Link](https://www.youtube.com/watch?v=Zm3G9oqmQ4Y)
 
 ### Abstract
 
@@ -136,7 +137,7 @@ Motion VAE 학습이 끝나면, 학습된 Motion VAE 모델과 함께 더 정교
 - Author: [Sungjoon Choi](https://sites.google.com/view/sungjoon-choi/), Matthew Pan, Joohyung Kim
 - Proceeding: Robotics: Science and Systems (RSS) 2020
 - Paper: [PDF](http://www.roboticsproceedings.org/rss16/p071.pdf)
-- Video: [Main video](https://www.youtube.com/watch?v=99r7-Pwf_f4)
+- Video: [Link](https://www.youtube.com/watch?v=99r7-Pwf_f4)
 
 ---
 

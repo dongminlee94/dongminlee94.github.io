@@ -11,7 +11,7 @@ categories:
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), Glen Berseth, [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
 - Proceeding: ACM Transactions on Graphics (TOG) (Proc. SIGGRAPH 2015)
 - Paper: [PDF](https://dl.acm.org/doi/pdf/10.1145/2766910)
-- Videos: [Main video](https://www.youtube.com/watch?v=mazfn4dHPRM), [Supplementary video](https://www.youtube.com/watch?v=RTuSHI5FNzg)
+- Videos: [Link](https://www.youtube.com/watch?v=mazfn4dHPRM), [Supplementary video](https://www.youtube.com/watch?v=RTuSHI5FNzg)
 
 ### Abstract
 
@@ -33,7 +33,7 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), Glen Berseth, [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
 - Proceeding: ACM Transactions on Graphics (TOG) (Proc. SIGGRAPH 2016)
 - Paper: [PDF](https://dl.acm.org/doi/pdf/10.1145/2897824.2925881)
-- Videos: [Main video](https://www.youtube.com/watch?v=KPfzRSBzNX4), [Supplementary video](https://www.youtube.com/watch?v=A0BmHoujP9k)
+- Videos: [Link](https://www.youtube.com/watch?v=KPfzRSBzNX4), [Supplementary video](https://www.youtube.com/watch?v=A0BmHoujP9k)
 
 ---
 
@@ -42,7 +42,7 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
 - Proceeding: ACM SIGGRAPH / Eurographics Symposium on Computer Animation 2017
 - Paper: [PDF](https://dl.acm.org/doi/pdf/10.1145/3099564.3099567)
-- Video: [Main video](https://www.youtube.com/watch?v=L3vDo3nLI98)
+- Video: [Link](https://www.youtube.com/watch?v=L3vDo3nLI98)
 
 ---
 
@@ -51,7 +51,7 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), Glen Berseth, KangKang Yin, [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
 - Proceeding: ACM Transactions on Graphics (TOG) (Proc. SIGGRAPH 2017)
 - Paper: [PDF](https://dl.acm.org/doi/pdf/10.1145/3072959.3073602)
-- Video: [Highlights](https://www.youtube.com/watch?v=G4lT9CLyCNw), [Main video](https://www.youtube.com/watch?v=hd1yvLWm6oA), [Supplementary video](https://www.youtube.com/watch?v=x-HrYko_MRU)
+- Video: [Highlights](https://www.youtube.com/watch?v=G4lT9CLyCNw), [Link](https://www.youtube.com/watch?v=hd1yvLWm6oA), [Supplementary video](https://www.youtube.com/watch?v=x-HrYko_MRU)
 
 ---
 
@@ -60,7 +60,7 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), [Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/), [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/), [Michiel van de Panne](https://www.cs.ubc.ca/~van/)
 - Proceeding: ACM Transactions on Graphics (TOG) (Proc. SIGGRAPH 2018)
 - Paper: [PDF](https://dl.acm.org/doi/pdf/10.1145/3197517.3201311)
-- Video: [Main video](https://www.youtube.com/watch?v=vppFvq2quQ0), [Supplementary video](https://www.youtube.com/watch?v=8KdDwRLtNHQ)
+- Video: [Link](https://www.youtube.com/watch?v=vppFvq2quQ0), [Supplementary video](https://www.youtube.com/watch?v=8KdDwRLtNHQ)
 
 ---
 
@@ -69,4 +69,4 @@ Physics-based character에 대한 locomotion skill은 대부분 flat terrain에�
 - Author: [Xue Bin Peng](https://xbpeng.github.io/), Angjoo Kanazawa, Jitendra Malik, [Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/), [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/)
 - Proceeding: ACM Transactions on Graphics (TOG) (Proc. SIGGRAPH Asia 2018)
 - Paper: [PDF](https://dl.acm.org/doi/pdf/10.1145/3272127.3275014)
-- Video: [Main video](https://www.youtube.com/watch?v=4Qg5I5vhX7Q), [Supplementary video](https://www.youtube.com/watch?v=_iXt7by4nU4)
+- Video: [Link](https://www.youtube.com/watch?v=4Qg5I5vhX7Q), [Supplementary video](https://www.youtube.com/watch?v=_iXt7by4nU4)
