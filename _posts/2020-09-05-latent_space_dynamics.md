@@ -6,11 +6,10 @@ categories:
   - RL
 ---
 
-Constraint conditions
-
-- Papers including VAE
-- Papers including RL
-- Papers excluding Model-Based RL
+- Constraint conditions
+  - Papers including VAE
+  - Papers including RL
+  - Papers excluding Model-Based RL
 
 ---
 
