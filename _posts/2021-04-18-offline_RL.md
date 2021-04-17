@@ -6,7 +6,7 @@ categories:
   - RL
 ---
 
-<center> <img src='../../assets/images/offline_rl.png' width="800"> </center>
+<center> <img src='../../assets/images/offline_rl.png' width="600"> </center>
 
 ## An Optimistic Perspective on Offline Reinforcement Learning (2019.07)
 
