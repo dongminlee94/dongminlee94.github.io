@@ -12,7 +12,7 @@ categories:
 
 - Author: Rishabh Agarwal, Dale Schuurmans, Mohammad Norouzi
 - Proceeding: International Conference on Machine Learning (ICML) 2020
-- [[PDF](https://arxiv.org/pdf/1907.04543.pdf)] [[Website](https://offline-rl.github.io/)]
+- [[PDF](https://arxiv.org/pdf/1907.04543.pdf)][[Website](https://offline-rl.github.io/)]
 
 ---
 
@@ -20,7 +20,7 @@ categories:
 
 - Author: Justin Fu, Aviral Kumar, Ofir Nachum, George Tucker, Sergey Levine
 - Proceeding: arXiv preprint 2020
-- [[PDF](https://arxiv.org/pdf/2004.07219.pdf)] [[Website](https://sites.google.com/view/d4rl/home)]
+- [[PDF](https://arxiv.org/pdf/2004.07219.pdf)][[Website](https://sites.google.com/view/d4rl/home)]
 
 ---
 
