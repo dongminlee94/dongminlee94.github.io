@@ -12,7 +12,7 @@ categories:
 
 - Author: Rishabh Agarwal, Dale Schuurmans, Mohammad Norouzi
 - Proceeding: International Conference on Machine Learning (ICML) 2020
-- [[PDF](https://arxiv.org/pdf/1907.04543.pdf)], [[Website](https://offline-rl.github.io/)]
+- [[PDF](https://arxiv.org/pdf/1907.04543.pdf)] [[Website](https://offline-rl.github.io/)]
 
 ---
 
@@ -20,7 +20,7 @@ categories:
 
 - Author: Justin Fu, Aviral Kumar, Ofir Nachum, George Tucker, Sergey Levine
 - Proceeding: arXiv preprint 2020
-- [[PDF](https://arxiv.org/pdf/2004.07219.pdf)], [[Website](https://sites.google.com/view/d4rl/home)]
+- [[PDF](https://arxiv.org/pdf/2004.07219.pdf)] [[Website](https://sites.google.com/view/d4rl/home)]
 
 ---
 
@@ -36,7 +36,7 @@ categories:
 
 - Author: Tianhe Yu, Garrett Thomas, Lantao Yu, Stefano Ermon, James Zou, Sergey Levine, Chelsea Finn, Tengyu Ma
 - Proceeding: Conference on Neural Information Processing Systems (NeurIPS) 2020
-- [[PDF](https://arxiv.org/pdf/2005.13239.pdf)], [[Video](https://www.youtube.com/watch?v=hTwsxSd0AxU)]
+- [[PDF](https://arxiv.org/pdf/2005.13239.pdf)] [[Video](https://www.youtube.com/watch?v=hTwsxSd0AxU)]
 
 ---
 
@@ -44,7 +44,7 @@ categories:
 
 - Author: Ashvin Nair, Murtaza Dalal, Abhishek Gupta, Sergey Levine
 - Proceeding: arXiv preprint 2020
-- [[PDF](https://arxiv.org/pdf/2006.09359.pdf)], [[Website](https://awacrl.github.io/)]
+- [[PDF](https://arxiv.org/pdf/2006.09359.pdf)] [[Website](https://awacrl.github.io/)]
 
 ---
 
@@ -52,7 +52,7 @@ categories:
 
 - Author: Aviral Kumar, Aurick Zhou, George Tucker, Sergey Levine
 - Proceeding: Conference on Neural Information Processing Systems (NeurIPS) 2020
-- [[PDF](https://proceedings.neurips.cc//paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf)], [[Website](https://sites.google.com/view/cql-offline-rl)]
+- [[PDF](https://proceedings.neurips.cc//paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf)] [[Website](https://sites.google.com/view/cql-offline-rl)]
 
 ---
 
@@ -60,7 +60,7 @@ categories:
 
 - Author: Caglar Gulcehre, Ziyu Wang, Alexander Novikov, Tom Le Paine, Sergio Gomez Colmenarejo, Konrad Zolna, Rishabh Agarwal, Josh Merel, Daniel Mankowitz, Cosmin Paduraru, Gabriel Dulac-Arnold, Jerry Li, Mohammad Norouzi, Matt Hoffman, Ofir Nachum, George Tucker, Nicolas Heess, Nando de Freitas
 - Proceeding: Conference on Neural Information Processing Systems (NeurIPS) 2020
-- [[PDF](http://128.84.4.34/pdf/2006.13888)], [[Code](https://github.com/deepmind/deepmind-research/tree/master/rl_unplugged)]
+- [[PDF](http://128.84.4.34/pdf/2006.13888)] [[Code](https://github.com/deepmind/deepmind-research/tree/master/rl_unplugged)]
 
 ---
 
@@ -76,7 +76,7 @@ categories:
 
 - Author: Avi Singh, Albert Yu, Jonathan Yang, Jesse Zhang, Aviral Kumar, Sergey Levine
 - Proceeding: Conference on Robot Learning (CoRL) 2020
-- [[PDF](https://arxiv.org/pdf/2010.14500.pdf)], [[Website](https://sites.google.com/view/cog-rl)]
+- [[PDF](https://arxiv.org/pdf/2010.14500.pdf)] [[Website](https://sites.google.com/view/cog-rl)]
 
 ---
 
@@ -84,7 +84,7 @@ categories:
 
 - Author: Anurag Ajay, Aviral Kumar, Pulkit Agrawal, Sergey Levine, Ofir Nachum
 - Proceeding: International Conference on Learning Representations (ICLR) 2021
-- [[PDF](https://openreview.net/pdf?id=V69LGwJ0lIN)], [[Website](https://sites.google.com/view/opal-iclr)]
+- [[PDF](https://openreview.net/pdf?id=V69LGwJ0lIN)] [[Website](https://sites.google.com/view/opal-iclr)]
 
 ---
 
@@ -100,7 +100,7 @@ categories:
 
 - Author: Karl Schmeckpeper, Oleh Rybkin, Kostas Daniilidis, Sergey Levine, Chelsea Finn
 - Proceeding: Conference on Robot Learning (CoRL) 2020
-- [[PDF](https://arxiv.org/pdf/2011.06507.pdf)], [[Website](https://sites.google.com/view/rl-with-videos)], [[Code](https://github.com/kschmeckpeper/rl_with_videos)]
+- [[PDF](https://arxiv.org/pdf/2011.06507.pdf)] [[Website](https://sites.google.com/view/rl-with-videos)] [[Code](https://github.com/kschmeckpeper/rl_with_videos)]
 
 ---
 
