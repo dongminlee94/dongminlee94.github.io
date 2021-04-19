@@ -44,18 +44,6 @@ categories:
 - Proceeding: International Conference on Learning Representations (ICLR) 2021
 - [[PDF](https://openreview.net/pdf?id=V69LGwJ0lIN)][[Website](https://sites.google.com/view/opal-iclr)][[arXiv](https://arxiv.org/abs/2010.13611)]
 
-### COG: Connecting New Skills to Past Experience with Offline Reinforcement Learning (2020.10)
-
-- Author: Avi Singh, Albert Yu, Jonathan Yang, Jesse Zhang, Aviral Kumar, Sergey Levine
-- Proceeding: Conference on Robot Learning (CoRL) 2020
-- [[PDF](https://arxiv.org/pdf/2010.14500.pdf)][[Website](https://sites.google.com/view/cog-rl)][[arXiv](https://arxiv.org/abs/2010.14500)]
-
-### Offline Learning from Demonstrations and Unlabeled Experience (2020.11)
-
-- Author: Konrad Zolna, Alexander Novikov, Ksenia Konyushkova, Caglar Gulcehre, Ziyu Wang, Yusuf Aytar, Misha Denil, Nando de Freitas, Scott Reed
-- Proceeding: Conference on Neural Information Processing Systems (NeurIPS) Offline Reinforcement Learning Workshop 2020
-- [[PDF](https://arxiv.org/pdf/2011.13885.pdf)][[arXiv](https://arxiv.org/abs/2011.13885)]
-
 ---
 
 ## Offline Model-Based RL
@@ -94,7 +82,6 @@ categories:
 
 - NeurIPS 2020 Tutorial - Offline Reinforcement Learning: From Algorithms to Practical Challenges [[Website](https://sites.google.com/view/offlinerltutorial-neurips2020/home)]
 - Seita's Place Blog - Offline (Batch) Reinforcement Learning: A Review of Literature and Applications [[Website](https://danieltakeshi.github.io/2020/06/28/offline-rl/)]
-- Tistory Blog - Offline (batch) Reinforcement Learning의 의미와 적용 [[Website](https://talkingaboutme.tistory.com/entry/RL-Offline-Reinforcement-Learning)]
 - Sergey Levine YouTube - Offline Reinforcement Learning [[Video](https://www.youtube.com/watch?v=qgZPZREor5I)]
 - CS285: Deep Reinforcement Learning - Offline Reinforcement Learning [[PDF](http://rail.eecs.berkeley.edu/deeprlcourse/static/slides/lec-15.pdf)]
 - BAIR Blog - Offline Reinforcement Learning: How Conservative Algorithms Can Enable New Applications [[Website](https://bair.berkeley.edu/blog/2020/12/07/offline/)]
