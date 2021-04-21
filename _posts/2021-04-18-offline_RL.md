@@ -20,6 +20,12 @@ categories:
 
 ## Offline Model-Free RL
 
+### Stabilizing Off-Policy Q-Learning via Bootstrapping Error Reduction (2019.06)
+
+- Author: Aviral Kumar, Justin Fu, George Tucker, Sergey Levine
+- Proceeding: Conference on Neural Information Processing Systems (NeurIPS) 2019
+- [[PDF](https://arxiv.org/pdf/1906.00949.pdf)][[Website](https://sites.google.com/view/bear-off-policyrl)][[arXiv](https://arxiv.org/abs/1906.00949)]
+
 ### An Optimistic Perspective on Offline Reinforcement Learning (2019.07)
 
 - Author: Rishabh Agarwal, Dale Schuurmans, Mohammad Norouzi
