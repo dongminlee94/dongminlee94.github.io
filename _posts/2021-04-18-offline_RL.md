@@ -32,6 +32,12 @@ categories:
 - Proceeding: International Conference on Machine Learning (ICML) 2020
 - [[PDF](https://arxiv.org/pdf/1907.04543.pdf)][[Website](https://offline-rl.github.io/)][[arXiv](https://arxiv.org/abs/1907.04543)]
 
+### Behavior Regularized Offline Reinforcement Learning (2019.11)
+
+- Author: Behavior Regularized Offline Reinforcement Learning
+- Proceeding: arXiv preprint 2019
+- [[PDF](https://arxiv.org/pdf/1911.11361.pdf)][[arXiv](https://arxiv.org/abs/1911.11361)]
+
 ### Accelerating Online Reinforcement Learning with Offline Datasets (2020.06)
 
 - Author: Ashvin Nair, Murtaza Dalal, Abhishek Gupta, Sergey Levine
