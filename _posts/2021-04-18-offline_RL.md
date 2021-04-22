@@ -34,7 +34,7 @@ categories:
 
 ### Behavior Regularized Offline Reinforcement Learning (2019.11)
 
-- Author: Behavior Regularized Offline Reinforcement Learning
+- Author: Yifan Wu, George Tucker, Ofir Nachum
 - Proceeding: arXiv preprint 2019
 - [[PDF](https://arxiv.org/pdf/1911.11361.pdf)][[arXiv](https://arxiv.org/abs/1911.11361)]
 
