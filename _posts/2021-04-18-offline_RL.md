@@ -48,7 +48,7 @@ categories:
 
 - Author: Aviral Kumar, Aurick Zhou, George Tucker, Sergey Levine
 - Proceeding: Conference on Neural Information Processing Systems (NeurIPS) 2020
-- [[PDF](https://proceedings.neurips.cc//paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf)][[Website](https://sites.google.com/view/cql-offline-rl)][[arXiv](https://arxiv.org/abs/2006.04779)]
+- [[PDF](https://proceedings.neurips.cc//paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf)][[Website](https://sites.google.com/view/cql-offline-rl)][[arXiv](https://arxiv.org/abs/2006.04779)][[Supplemental](https://proceedings.neurips.cc/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Supplemental.pdf)]
 
 ### OPAL: Offline Primitive Discovery for Accelerating Offline Reinforcement Learning (2020.10)
 
