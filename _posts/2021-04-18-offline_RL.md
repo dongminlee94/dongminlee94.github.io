@@ -60,6 +60,12 @@ categories:
 
 ## Offline Model-Based RL
 
+### MOReL: Model-Based Offline Reinforcement Learning (2020.05)
+
+- Author: Rahul Kidambi, Aravind Rajeswaran, Praneeth Netrapalli, Thorsten Joachims
+- Proceeding: Conference on Neural Information Processing Systems (NeurIPS) 2020
+- [[PDF](https://arxiv.org/pdf/2005.05951.pdf)][[Website](https://sites.google.com/view/morel)][[arXiv](https://arxiv.org/abs/2005.05951)]
+
 ### MOPO: Model-based Offline Policy Optimization (2020.05)
 
 - Author: Tianhe Yu, Garrett Thomas, Lantao Yu, Stefano Ermon, James Zou, Sergey Levine, Chelsea Finn, Tengyu Ma
