@@ -56,6 +56,12 @@ categories:
 - Proceeding: International Conference on Learning Representations (ICLR) 2021
 - [[PDF](https://openreview.net/pdf?id=V69LGwJ0lIN)][[Website](https://sites.google.com/view/opal-iclr)][[arXiv](https://arxiv.org/abs/2010.13611)]
 
+### Uncertainty Weighted Actor-Critic for Offline Reinforcement Learning (2021.05)
+
+- Author: Yue Wu, Shuangfei Zhai, Nitish Srivastava, Joshua Susskind, Jian Zhang, Ruslan Salakhutdinov, Hanlin Goh
+- Proceeding: International Conference on Machine Learning (ICML) 2021
+- [[PDF](https://arxiv.org/pdf/2105.08140.pdf)][[arXiv](https://arxiv.org/abs/2105.08140)]
+
 ---
 
 ## Offline Model-Based RL
