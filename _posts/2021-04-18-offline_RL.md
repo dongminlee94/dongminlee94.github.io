@@ -8,7 +8,7 @@ categories:
 
 <center> <img src='../../assets/images/offline_rl.png' width="550"> </center>
 
-## Survey
+## Review Paper
 
 ### Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems (2020.05)
 
