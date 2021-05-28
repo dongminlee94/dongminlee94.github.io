@@ -50,6 +50,12 @@ categories:
 - Proceeding: Conference on Neural Information Processing Systems (NeurIPS) 2020
 - [[PDF](https://proceedings.neurips.cc//paper/2020/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf)][[Website](https://sites.google.com/view/cql-offline-rl)][[arXiv](https://arxiv.org/abs/2006.04779)][[Supplemental](https://proceedings.neurips.cc/paper/2020/file/0d2b2061826a5df3221116a5085a6052-Supplemental.pdf)]
 
+### COG: Connecting New Skills to Past Experience with Offline Reinforcement Learning (2020.10)
+
+- Author: Avi Singh, Albert Yu, Jonathan Yang, Jesse Zhang, Aviral Kumar, Sergey Levine
+- Proceeding: Conference on Robot Learning (CoRL) 2020
+- [[PDF](https://arxiv.org/pdf/2010.14500.pdf)][[Website](https://sites.google.com/view/cog-rl)][[arXiv](https://arxiv.org/abs/2010.14500)][[Video](https://www.youtube.com/watch?v=6sb31PtpI_s)]
+
 ### OPAL: Offline Primitive Discovery for Accelerating Offline Reinforcement Learning (2020.10)
 
 - Author: Anurag Ajay, Aviral Kumar, Pulkit Agrawal, Sergey Levine, Ofir Nachum
