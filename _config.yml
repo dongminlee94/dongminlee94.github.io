@@ -110,7 +110,7 @@ analytics:
 # Site Author
 author:
   name             : "Dongmin Lee"
-  avatar           : "/assets/images/nick.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/nick.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "ML Research Engineer"
   location         : "MakinaRocks"
   email            : 
